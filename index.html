@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do List | by Layesall</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="./styles/index.css">
+</head>
+<body>
+
+    <main id="todo-app">
+
+        <header class="todo-header">
+            <h1>To-do List</h1>
+            <div id="todo-form">
+                <input type="text" name="todo-input" id="todo-input" maxlength="50" placeholder="Here your text">
+                <button type="button" id="todo-button" title="Add task">
+                    <i class="fas fa-plus"></i>
+                </button>
+            </div>
+        </header>
+
+        <section class="todo-list">
+            <div class="list">
+                <div class="list-text">List text</div>
+                <div title="Done" class="list-btn list-btn-check">
+                    <i class="fas fa-check"></i>
+                </div>
+                <div title="Delete" class="list-btn list-btn-delete" id="">
+                    <i class="fas fa-trash-alt"></i>
+                </div>
+            </div>
+        </section>
+
+        <footer class="todo-footer">
+            <span>&copy; <a href="www.layesall.com/" title="Layesall">Layesall</a></span>
+            <span class="drop-list" title="Drop list"> <i class="fas fa-trash"></i> </span>
+        </footer>
+
+    </main>
+
+    <!-- index-js -->
+    <script src="./src/index.js" type="module"></script>
+</body>
+</html>
